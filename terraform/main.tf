@@ -2,8 +2,8 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "infrastructure@aws-lab.business"
-    AccountName               = "infrastructure"
+    AccountEmail              = "tf-test1@aws-lab.business"
+    AccountName               = "tf-test1"
     ManagedOrganizationalUnit = "AFT"
     SSOUserEmail              = "admin1@aws-lab.business"
     SSOUserFirstName          = "Yoimer"
@@ -23,5 +23,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "infrastructure"
+  account_customizations_name = "tf-test1"
 }
